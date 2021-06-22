@@ -1,0 +1,314 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.container {
+  position: relative;
+  text-align: center;
+  color: white;
+
+
+}
+
+.bottom-left {
+  position: absolute;
+  bottom: 8px;
+  text-align: center;
+  left: 16px;
+}
+
+.top-left {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+}
+
+.top-right {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+}
+
+.bottom-right {
+  position: absolute;
+  bottom: 8px;
+  right: 16px;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.left-centered {
+  position: absolute;
+  top: 50%;
+  left: 30px;
+  text-align: left;
+}
+.right-centered {
+  position: absolute;
+  top:50%;
+  right: 60px;
+  text-align: right;
+}
+.center {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 200px;
+          border: 3px solid green; 
+        }
+
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-content: space-between;
+  align-items: center;
+}
+
+.flex-container-no-space {
+  display: flex;
+  flex-direction: row;
+  align-content: space-between;
+  align-items: center;
+}
+.flex-container-scroll {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-content: space-between;
+  overflow-x: auto;
+  align-items: center;
+  animation-name: slide; 
+  animation-iteration-count:  infinite;
+  animation-duration: 6 0s; 
+  animation-fill-mode: forwards;
+}
+
+.flex-container-scroll::-webkit-scrollbar {    display: none;}
+.flex-container-scroll:hover
+{
+    animation-play-state: move;
+}
+
+@keyframes slides {
+  0% {
+    margin-left: 0px;
+  }
+  10% {
+    margin-left: 200px;
+  }
+  20% {
+    margin-left: 400px;
+  }
+  30% {
+    margin-left: 600px;
+  }
+  40% {
+    margin-left: 800px;
+  }
+  50% {
+    margin-left: 1000px;
+  }
+  60% {
+    margin-left: 1200px;
+  }
+  70% {
+    margin-left: 1400px;
+  }
+  
+  100% {
+    margin-left: 1600px;
+  }
+}
+
+body, html {
+    height: 100%;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  
+
+
+</style>
+
+
+
+
+<body> 
+<div>
+  <div class="container">
+    <img src="https://ik.imagekit.io/3idazvep5q/website/homepage/banner_Qh-VflkX2.webp " style="width:100%;">
+    <div class="top-left"><p><span><em>FRIZTY Petician PETS STORE </em></span></p></div>
+    <div class="left-centered">
+      <h1>Find the Right food </br>for your unique pet</h1>
+      <p>lpsum is simply dummy text of the printing and typesetting industry.
+      <br> Lorem lpsum has been the industry' standard dummy text over since the 1500s.
+      </p>
+  </div>
+  
+  </div>
+         
+</div>
+ <div>
+  
+  <p style="text-align: center;">TRENDING CATEGORIES</p>
+  <h1 style="text-align: center;"> Shop By Category </h1>
+  <div class="flex-container-scroll" style="text-align: center;">
+  
+   <figure> <img src = "https://www.allaboutbirds.org/guide/assets/photo/66031271-480px.jpg " 
+     style = "width:150px; height: 150px;" > 
+  <figcaption>Parrot</figcaption> 
+  </figure>
+    <figure> <img src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ778d_kAXBXgkS_kQsUeQat-5tqS8UXjGU3ahBgAyDawskMBf4&usqp=CAU" alt = "encryted" style = "width:150px; height: 150px;">
+      <figcaption>Dog</figcaption> 
+    </figure>
+   <figure> <img src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ43qxThaRt8Jr3Zaqqnw6cL27qpMbufeOzb_oDrTdCxNmzibQsIjMy3wuEPxbuEPexRIs&usqp=CAU" alt = "encryted"style ="width:150px; height: 150px;">
+      <figcaption>Rabbit</figcaption> 
+    </figure>
+    <figure> <img src = " https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQA3WV_OwWyydt68NUDNVr5uyS4cYkJbdf7GXFBdBhyu8eWGXjWTJVXbB1WmXZo5gi03rg&usqp=CAU" alt = "encryted" style = "width:150px; height: 150px;">    
+      <figcaption>Rat</figcaption> 
+    </figure>
+    <figure> <img src = "https://www.allaboutbirds.org/guide/assets/photo/66031271-480px.jpg " style = "width:150px; height: 150px;">
+      <figcaption>Parrot</figcaption> 
+    </figure>
+    <figure> <img src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ778d_kAXBXgkS_kQsUeQat-5tqS8UXjGU3ahBgAyDawskMBf4&usqp=CAU" alt = "encryted" style = "width:150px; height: 150px;">
+      <figcaption>Dog</figcaption> 
+    </figure>
+   <figure> <img src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ43qxThaRt8Jr3Zaqqnw6cL27qpMbufeOzb_oDrTdCxNmzibQsIjMy3wuEPxbuEPexRIs&usqp=CAU" alt = "encryted"style ="width:150px; height: 150px;">
+      <figcaption>Rabbit</figcaption> 
+    </figure>
+    <figure> <img src = " https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQA3WV_OwWyydt68NUDNVr5uyS4cYkJbdf7GXFBdBhyu8eWGXjWTJVXbB1WmXZo5gi03rg&usqp=CAU" alt = "encryted" style = "width:150px; height: 150px;">    
+      <figcaption>Rat</figcaption> 
+    </figure>
+    <figure> <img src = "https://www.allaboutbirds.org/guide/assets/photo/66031271-480px.jpg " style = "width:150px; height: 150px;">
+      <figcaption>Parrot</figcaption> 
+    </figure>
+    <figure> <img src = "https://www.allaboutbirds.org/guide/assets/photo/66031271-480px.jpg " 
+      style = "width:150px; height: 150px;" > 
+      <figcaption>Parrot</figcaption>
+   </figure>
+     <figure> <img src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ778d_kAXBXgkS_kQsUeQat-5tqS8UXjGU3ahBgAyDawskMBf4&usqp=CAU" alt = "encryted" style = "width:150px; height: 150px;">
+       <figcaption>Dog</figcaption> 
+     </figure>
+    <figure> <img src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ43qxThaRt8Jr3Zaqqnw6cL27qpMbufeOzb_oDrTdCxNmzibQsIjMy3wuEPxbuEPexRIs&usqp=CAU" alt = "encryted"style ="width:150px; height: 150px;">
+       <figcaption>Rabbit</figcaption> 
+     </figure>
+     <figure> <img src = " https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQA3WV_OwWyydt68NUDNVr5uyS4cYkJbdf7GXFBdBhyu8eWGXjWTJVXbB1WmXZo5gi03rg&usqp=CAU" alt = "encryted" style = "width:150px; height: 150px;">    
+       <figcaption>Rat</figcaption> 
+     </figure>
+     <figure> <img src = "https://www.allaboutbirds.org/guide/assets/photo/66031271-480px.jpg " style = "width:150px; height: 150px;">
+       <figcaption>Parrot</figcaption> 
+     </figure>
+     <figure> <img src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ778d_kAXBXgkS_kQsUeQat-5tqS8UXjGU3ahBgAyDawskMBf4&usqp=CAU" alt = "encryted" style = "width:150px; height: 150px;">
+       <figcaption>Dog</figcaption> 
+     </figure>
+    <figure> <img src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ43qxThaRt8Jr3Zaqqnw6cL27qpMbufeOzb_oDrTdCxNmzibQsIjMy3wuEPxbuEPexRIs&usqp=CAU" alt = "encryted"style ="width:150px; height: 150px;">
+       <figcaption>Rabbit</figcaption> 
+     </figure>
+     <figure> <img src = " https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQA3WV_OwWyydt68NUDNVr5uyS4cYkJbdf7GXFBdBhyu8eWGXjWTJVXbB1WmXZo5gi03rg&usqp=CAU" alt = "encryted" style = "width:150px; height: 150px;">    
+       <figcaption>Rat</figcaption> 
+     </figure>
+     <figure> <img src = "https://www.allaboutbirds.org/guide/assets/photo/66031271-480px.jpg " style = "width:150px; height: 150px;">
+       <figcaption>Parrot</figcaption> 
+     </figure>
+  </div>
+
+      <div style="height:400px;background-color: gray;" >
+        <p>&nbsp;</p>
+        <p style="text-align: center;">TRENDING PRODUCTS</p>
+        <h2 style="text-align: center;">TOP PRODUCT </h2>
+        <div class="flex-container" style="text-align: center;">
+            
+        <div class="container">  <img src = "https://ik.imagekit.io/3idazvep5q/website/homepage/bird-product_HAmEDhl7Mi.jpg" style="width: 600px; height: 250px;"> 
+        
+          <div class="top-right"><h1>Get Bird Supplies</h1> 
+          <h3>get upto 50% off</h3> 
+          <button style="background-color: transparent; border: 1px solid white; color: white;">Shop now</button>
+         </div>
+          
+        </div>
+        <div class="container"><img src = "https://ik.imagekit.io/3idazvep5q/website/homepage/reptile-product_rGuBRFbx6.jpg" style = "width:600px; height: 250px;">
+          <div class="top-left"><h1>Reptiles Product</h1>
+            <h3>best food product</h3>
+            <button style="background-color: transparent; border: 1px solid white; color: white;">Shop now</button>
+
+
+        </div>
+        </div>
+        </div>
+ 
+ </div> 
+</div>
+ <div>
+  <p style="text-align: center;">PUPPY DOG FOOD </p>
+  <h1 style="text-align: center;"> Best Pet Food</h1>  
+<div class="flex-container-no-space">    
+  <div style="width: 40%; height: 300px; text-align: center; line-height: 1.8; font-size: 120%;">
+    Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+    Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, 
+    when an unknown printer Lorem Ipsum is simply dummy text of the printing
+    and typesetting industry. Lorem Ipsum has been the industry’s.
+    Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+    Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, 
+    when an unknown printer Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+    Lorem Ipsum has been the industry’s.</div>
+<div style="width:50%; height: 300px;"><img src="https://ik.imagekit.io/3idazvep5q/website/homepage/best-food_ea5EqffRF.png " align="rignt" ></div>
+
+</div>
+</div>
+</div>
+<div style="height: 150px;"></div>
+
+<div>
+  <div>
+  <p style="text-align: center;"> PRODUCT CATEGORIES  </p>
+  <h1 style="text-align: center;"> Pet Food Category </h1> 
+  <div class="flex-container" style="text-align: center;">
+  <div class="container"style= "width:30%;">
+    <img src="https://ik.imagekit.io/3idazvep5q/website/homepage/food-promotion1_os879QgMJ.png" >
+  <div class="top-left"><p><span><em>BIG SALE </em></span></p></div>
+  <div class="right-centered">
+
+      <h1> Organic Food </br>Avaible on Store Now </h1>
+      </div>
+      </div>
+      <div class="container" style= "width:30%;">
+        <img src="https://ik.imagekit.io/3idazvep5q/website/homepage/food-promotion2_MFejWpvoWg.png" >
+        <div class="centered"><p><em> The Difference</em></p></div>
+        <div class="centered">
+          <h1> Dog Knows</br>let us know </h1>
+          </div>
+          </div>
+          <div class="container"style= "width:30%;">
+            <img src="https://ik.imagekit.io/3idazvep5q/website/homepage/food-promotion3_5Z4HJBfaB.png" >
+            <div class="centered"><p><em> Exclusive Sale</em></p></div>
+            <div class="left-centered">
+              <h1> 40 % off </br> Shop Now  </h1>
+                </div>
+                </div>
+</div>
+      
+  </div>
+
+    
+
+
+           
+</div>
+
+        
+  
+        
+  </body>
+  </head> 
